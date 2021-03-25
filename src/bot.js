@@ -1,5 +1,5 @@
 //Loads environment variables from the .env file
-// require('dotenv').config();
+require('dotenv').config();
 
 //Importing from discord.js module
 const Discord = require('discord.js');
@@ -52,4 +52,4 @@ async function getServerCount() {
 
 serverCountLoop();
 
-client.login("ODI0Mzk3MjE5NDkzOTY5OTQw.YFuxvQ.kJKmHF9iTpAeVYo39m6FKpz8LzY");
+client.login(token);
