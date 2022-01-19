@@ -44,8 +44,8 @@ var countFunctionArray = [
     getServerCount1,
     getServerCount2,
     getServerCountDM,
-    getServerCountEV,
-    getServerCountEV2
+    getServerCountEV
+    // getServerCountEV2
 ];
 
 //APIs
@@ -57,8 +57,6 @@ async function getServerCount1() {
         .catch(function (error) {
             console.log("Error fetching server count: " + error);
         })
-        .then(function () {
-        })
 }
 async function getServerCount2() {
     return await axios.get("https://server-count.herokuapp.com/serv-count/2")
@@ -67,8 +65,6 @@ async function getServerCount2() {
         })
         .catch(function (error) {
             console.log("Error fetching server count: " + error);
-        })
-        .then(function () {
         })
 }
 async function getServerCountDM() {
@@ -79,8 +75,6 @@ async function getServerCountDM() {
         .catch(function (error) {
             console.log("Error fetching server count: " + error);
         })
-        .then(function () {
-        })
 }
 async function getServerCountEV() {
     return await axios.get("https://server-count.herokuapp.com/serv-count/ev")
@@ -90,8 +84,6 @@ async function getServerCountEV() {
         .catch(function (error) {
             console.log("Error fetching server count: " + error);
         })
-        .then(function () {
-        })
 }
 async function getServerCountEV2() {
     return await axios.get("https://server-count.herokuapp.com/serv-count/ev2")
@@ -100,8 +92,6 @@ async function getServerCountEV2() {
         })
         .catch(function (error) {
             console.log("Error fetching server count: " + error);
-        })
-        .then(function () {
         })
 }
 
